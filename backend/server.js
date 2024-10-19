@@ -20,7 +20,9 @@ mongoose.connect('mongodb://localhost:27017/customers')
 
 //create a object
 const userSchema= new mongoose.Schema({
-    name: String,
+    firstname: String,
+    lastname: String,
+    address: String,
     email:String,
     password: String,
 });
